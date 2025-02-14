@@ -1,4 +1,4 @@
-public class ques7 {
+public class volOfEarth {
         public static void main(String[] args) {
             // Define constants
             double radiusKm = 6378;

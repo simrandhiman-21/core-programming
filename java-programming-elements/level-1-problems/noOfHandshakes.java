@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ques16 {
+public class noOfHandshakes {
         public static void main(String[] args) {
         // Create a Scanner object to take user input
         Scanner input = new Scanner(System.in);

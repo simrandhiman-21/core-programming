@@ -1,4 +1,4 @@
-public class ques1 {
+public class findAge {
         public static void main(String[] args) {
             int birthYear = 2000;
             int currentYear = 2024;
@@ -8,7 +8,5 @@ public class ques1 {
             System.out.println("Harry's age in 2024 is " + age);
         }
     }
-
-
 
 

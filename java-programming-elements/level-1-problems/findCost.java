@@ -1,4 +1,4 @@
-public class ques4 {
+public class findCost {
             public static void main(String[] args) {
             double costPrice = 129;
             double sellingPrice = 191;

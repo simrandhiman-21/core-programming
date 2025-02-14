@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ques14 {
+public class distanceInYards {
     public static void main(String[] args) {
         // Create a Scanner object to take user input
         Scanner input = new Scanner(System.in);

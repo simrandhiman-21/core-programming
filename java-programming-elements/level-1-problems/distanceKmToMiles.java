@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ques8 {
+public class distanceKmToMiles {
 
     public static void main(String[] args) {
         // Create Scanner object to take user input

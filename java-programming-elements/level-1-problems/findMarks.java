@@ -1,4 +1,4 @@
-public class ques2 {    
+public class findMarks {    
     public static void main(String[] args) {
         int mathsMark = 94;
         int physicsMark = 95;

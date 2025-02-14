@@ -1,4 +1,4 @@
-public class ques5 {
+public class penPerStudent {
     public class PenDistributor {
         public static void main(String[] args) {
             int totalPens = 14;

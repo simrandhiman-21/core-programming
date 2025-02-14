@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ques10 {
+public class heightInCms {
         public static void main(String[] args) {
         // Create Scanner object to take user input
         Scanner input = new Scanner(System.in);

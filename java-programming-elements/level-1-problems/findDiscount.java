@@ -1,4 +1,4 @@
-public class ques6 {
+public class findDiscount {
     public static void main(String[] args) {
                 // Define the course fee
                 double fee = 125000;

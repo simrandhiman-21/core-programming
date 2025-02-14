@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class ques9 {
+public class discountPercentage {
 
     public static void main(String[] args) {
         // Create Scanner object to take user input
