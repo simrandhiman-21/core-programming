@@ -12,7 +12,7 @@ public class NullPointerExceptionClass {
 
         System.out.println("Calling method to handle exception ");
         handleException();
-
+        
     }
     public static void generateException(){
         String text=null;
