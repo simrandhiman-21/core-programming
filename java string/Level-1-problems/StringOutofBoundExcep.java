@@ -9,11 +9,11 @@ public class StringOutofBoundExcep {
         try {
             generateException(input);
         }
-        catch (StringIndexOutOfBoundsException e) {
-            System.out.println("StringIndexOutOfBoundsException: " + e);
+        catch (Exception e) {
+            System.out.println(e.getMessage());
         }
 
-        handleException(input);
+       // handleException(input);
 
     }
 

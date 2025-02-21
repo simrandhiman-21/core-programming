@@ -6,50 +6,51 @@ public class substring {
         Scanner sc=new Scanner(System.in);
 
         System.out.println("Enter first String ");
-        String firststr=sc.nextLine();
-        System.out.println("Enter second String ");
-        String secondstr=sc.nextLine();
-
+        String input=sc.nextLine();
+        
         System.out.println("Enter Start of substing ");
         int start=sc.nextInt();
         System.out.println("Enter End of substring ");
         int end=sc.nextInt();
 
+        String inbuild=findsubstring(input,start,end);
+        String manual= manualSubstring(input,start,end);    
+        
+        System.out.println("Inbuild string "+inbuild);
+        System.out.println("Manual string "+manual);
 
-       boolean ans= compare(firststr,secondstr);
-       if(ans==true){
-        System.out.println("Both strings are equal");
-       }
-       else {
-        System.out.println("Both strings are not equal");
-       }
 
-       String substr1=findsubstring(firststr,start,end);
-       String substr2=findsubstring(secondstr,start,end);
+        boolean areEqual=compareStrings(inbuild,manual);
+        if (areEqual) {
+            System.out.println("Both substrings are equal.");
+        } else {
+            System.out.println("Substrings are NOT equal.");
+        }    
+   }
 
-       if(substr1==substr2){
-        System.out.println("Both SUBSTRINGS  have same substring");
-       }
-       else{
-        System.out.println("Both SUBSTRINGS do not have same substring");
-       }
+    public static String findsubstring(String firststr,int start,int end){
+        return firststr.substring(start,end);    
+    }    
 
+    public static String manualSubstring(String input,int start,int end){
+
+        StringBuilder sb=new StringBuilder();
+
+        for(int i=start;i<end;i++){
+            sb.append(input.charAt(i));
+        }
+        return sb.toString();         
     }
 
-
-    public static boolean compare(String firststr,String secondstr){
-
-        for(int i=0;i<firststr.length()-1;i++){
-            char c1=firststr.charAt(i);
-            char c2=secondstr.charAt(i);
-
-            if(c1!=c2){
+    public static boolean compareStrings(String str1, String str2) {
+        if (str1.length() != str2.length()) {
+            return false;
+        }
+        for (int i = 0; i < str1.length(); i++) {
+            if (str1.charAt(i) != str2.charAt(i)) {
                 return false;
             }
         }
-        return true;        
+        return true;
     }
-    public static String findsubstring(String firststr,int start,int end){
-        return firststr.substring(start,end+1);    
-    }    
 }

@@ -16,7 +16,6 @@ public class lowercase {
         if(ans) System.out.println(" both uppercase results identical ");
         else System.out.println("NOT  uppercase results identical");
 
-
     }
     public static String convertLower(String input){
 

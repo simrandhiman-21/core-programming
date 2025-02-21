@@ -9,22 +9,30 @@ public class illegalArgumentExcep {
     String input=sc.nextLine();
 
     try{
-        System.out.println("Substrign "+ input.substring(input.length(),input.length()-1));
+        generateException(input);
     }
-    catch (StringIndexOutOfBoundsException e) {
-        System.out.println("Error: Index out of bounds"+ e );
+    catch (IllegalArgumentException e) {
+        System.out.println("IllegalArgumentException Caught in main: " + e.getMessage());
     }
     handleException(input);
 }
+public static void generateException(String input){
+    System.out.println("Generating Exception...");
+        // Intentionally using start > end to trigger IllegalArgumentException
+      System.out.println("Substring: " + input.substring(3, 1));
+
+
+}
     public static void handleException(String input){
         try{
-            System.out.println("Substrign "+ input.substring(input.length(),input.length()-1));
+            System.out.println("Handling Exception...");
+            System.out.println("Substring: " + input.substring(3, 1));
         }
-        catch(StringIndexOutOfBoundsException e){
-            System.out.println("IllegalArgumentException Caught: " + e);
+        catch(IllegalArgumentException e){
+            System.out.println("IllegalArgumentException Caught in generateException: " + e.getMessage());
         }
         catch(RuntimeException e){
-            System.out.println("RuntimeException Caught: " + e);
+            System.out.println("RuntimeException Caught in generateException: " + e.getMessage());
         }
     }   
 }
