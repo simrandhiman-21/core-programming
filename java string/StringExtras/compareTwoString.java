@@ -10,18 +10,35 @@ public class compareTwoString {
         
         System.out.println("Enter String 2:");
         String inputTwo = sc.nextLine(); 
-        
-        sc.close(); // Close scanner to prevent memory leaks
-        
-        // Using compareTo() to compare strings lexicographically
-        int result = inputOne.compareTo(inputTwo);
+        boolean flag=false;
 
-        if (result < 0) {
-            System.out.println(inputOne + " comes before " + inputTwo);
-        } else if (result > 0) {
-            System.out.println(inputTwo + " comes before " + inputOne);
-        } else {
-            System.out.println("Both strings are equal.");
+        for(int i=0;i<Math.min(inputOne.length(),inputTwo.length());i++){
+            if(inputOne.charAt(i)<inputTwo.charAt(i)){
+                    System.out.println(inputOne +"  and then "+inputTwo );
+                    flag=true;
+                    break;
+            }
+            else if(inputOne.charAt(i)>inputTwo.charAt(i)){
+                    System.out.println(inputTwo +"  and then "+inputOne);
+                    flag=true;
+                    break;
+            }
         }
+        
+        if(!flag){
+            if(inputOne.length()<inputTwo.length()){ //prefix and equal case handle
+                System.out.println(inputOne+ "comes first and then "+ inputOne +"goes second ");
+            }
+            else if(inputOne.length()>inputTwo.length()){
+                System.out.println(inputTwo+ "comes first and then "+ inputTwo +"goes second ");
+            }
+            else{
+                System.out.println("Both strings are equal");
+            }
+        }
+
+
+        
+        
     }
 }

@@ -19,6 +19,13 @@ public class removeSpeficCharcter {
     }
 
     public static String removeCharacter(String str, char ch) {
-        return str.replace(Character.toString(ch), ""); // Replace all occurrences
+        return str.replaceAll(Character.toString(ch), ""); // Replace all occurrences
+        // StringBuilder sb=new StringBuilder();
+        // for(char c:str.toCharArray()){
+        //     if(c!=ch){
+        //         sb.append(c);
+        //     }
+        // }
+        // return sb.toString();
     }
 }

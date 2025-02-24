@@ -31,3 +31,22 @@ public class findsubstringoccurences {
             }
         }
         
+
+
+// public class findsubstringoccurences {
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+             
+//                 String str="java programming langugae javaing is good for programming how you doing";
+//                 String substr="ing";
+//                   int count=0;
+
+//                   for(String word:str.split("\\s+")){
+//                     if(word.contains("ing"))count++;
+//                  }
+                
+                
+//                 System.out.println(count);
+//             }
+// }
+        

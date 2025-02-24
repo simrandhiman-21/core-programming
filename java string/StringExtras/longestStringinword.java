@@ -8,15 +8,14 @@ public class longestStringinword {
         
         String longest="";
         
-        int max=0;
-        
+               
         for(String word:input.split("\\s+")){
             if(word.length()>longest.length()){
                 longest=word;
             }
         }
                 
-        System.out.println("Longest word is "+longest);
+        System.out.println("Longest word is : "+longest);
 
 
 

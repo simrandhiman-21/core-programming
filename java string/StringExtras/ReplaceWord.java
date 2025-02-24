@@ -22,7 +22,7 @@ public class ReplaceWord {
     }
 
     public static String replaceWord(String sentence, String oldWord, String newWord) {
-        return sentence.replaceAll("\\b" + oldWord + "\\b", newWord); // Replace exact word matches
+        return sentence.replaceAll("\\b"+oldWord+"\\b", newWord); // this replace is with cat but is not is separate word \\b need separet word 
     }
 }
 
